@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb Game</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="initialPage">
+            <div id = "selection">
+                <form>
+                    <p id = "gameName">
+                        <h2 id = "gameTitle">BULBS GAME</h2>
+                    </p>
+                    <p>
+                        <label for="name">Name: </label>
+                        <input id="name" type = "text">
+                    </p>
+                    <p>
+                        <label for="boards">Select a board: </label>
+                        <select name = "matrixes" id="boards">
+                        <option value = "7x7">7x7</option>
+                        <option value = "7x7*">7x7*</option>
+                        <option value = "10x10">10x10</option>
+                        <option value = "savedGame" id = "savedGame">Saved Game</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button id = "startButton" type = "button"> Start </button>
+                    </p>
+                </form>
+            </div>
+            <div id = "description">
+                <h2 id = "descriptionTitle"> Game Description</h2>
+                <p id = "descriptionP"> Light bulbs can only be placed above white tiles.
+                    The light from the light bulbs does not spread diagonally, only straight along the given row and column.
+                    The black tiles have objects placed on them, which block the propagation of light.
+                    Black cells can optionally contain an integer from 0 to 4. This indicates how many adjacent (bottom, top, right, left) cells contain light bulbs. If there is such a number, the puzzle must be solved accordingly!
+                    Two light bulbs can NEVER illuminate each other!
+                    The goal of the game is to place the light bulbs so that all the white tiles are illuminated.
+                    The game is played by one player until he solves the puzzle, so there is no need to manage multiple players at the same time or divide into rounds.</p>
+            </div>
+    </div>
+
+    <div class = "matrixPage">
+        <div id = "neededForBoard">
+            <table id = "table"></table>
+            <div id = "block">
+                <button id = "checkButton"> Check </button>
+                <button id = "restartButton"> Restart </button>
+            </div>
+        </div>
+        <div id = "scoreBoard">
+            <h2 id = "scoreboardTitle">SCOREBOARD</h2>
+            <div id = "scoreBoardDetails">
+                <p id="nameScoreBoard">Name: </p>
+                <section class="time">
+                    <div class="display">
+                      <div id="hour">00</div>
+                      <div id="min">00</div>
+                      <div id="sec">00</div>
+                      <div id="msec">00</div>
+                    </div>
+                  <div class = "buttons">
+                    <button onclick="start()" class = "button btn1">Start</button>
+                    <button onclick="stop()" class = "button btn2">Stop</button>
+                </div>  
+                </section>
+                <button class = "buttons" id = "saveButton">Save Game</button>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

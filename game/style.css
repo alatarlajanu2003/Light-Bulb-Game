@@ -1,0 +1,211 @@
+
+    body{
+        background-image: url("bulbs.jpg");
+    }
+
+    .matrixPage{
+        display: none;
+        flex-wrap: wrap;
+    }
+
+
+    .matrixPage #neededForBoard{
+        padding-top: 5%;
+        width: 55%;
+        text-align: center;
+    }
+
+    .matrixPage #scoreBoard{
+        width: 30%;
+        height: 20%;
+        margin-right: 25px;
+        margin-top: 5%;
+        text-align: center;
+        background-color: rgb(167, 161, 161, 0.9);
+        min-width: 450px;
+        max-width: 450px;
+        height: 300px;
+    }
+
+    td{
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        color: aliceblue;
+        font-size: x-large;
+    }
+
+    table, tr, td{
+        border:3px solid rgb(167, 161, 161);
+        border-collapse: collapse;
+    }
+
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 450px;
+    }
+
+    .color-white{
+        background-color: rgb(245, 245, 242);
+    }
+
+    .color-black{
+        background-color: black;
+    }
+
+    .color-yellow{
+        background-color: rgb(247, 241, 134);
+    }
+
+    .color-red{
+        background-color: red;
+    }
+
+    .color-green{
+        background-color: #7CFC00;
+    }
+
+    .color-checkRestartButton{
+        background-color: rgb(167, 161, 161);
+    }
+
+    #checkButton, #restartButton{
+        margin-top: 20px;
+        width: 150px;
+        height: 50px;
+        font-size: x-large;
+        font-family: monospace;
+        border-radius: 10px;
+    }
+   
+    .initialPage {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .initialPage #selection {
+        position: absolute;
+        width: 100%;
+        min-width: 200px;
+        top: 20%;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    form{
+        padding: 24px 48px;
+        background-color: rgb(147, 143, 143, 0.9);
+        margin-left: 30%;
+        margin-right: 30%;
+        min-width: 230px;
+    }
+
+    .initialPage #description{
+        position: absolute;
+        top: 60%;
+        margin-left: 27%;
+        margin-right:27%;
+        justify-content: center;
+        min-width: 380px;
+    }
+
+    select, input{
+        font-size: 1rem;
+        font-family: monospace;
+    }
+
+    form label{
+        font-size: x-large;
+        font-family: monospace;
+        color: black;
+    }
+
+    #gameTitle{
+        color:black ;
+    }
+
+    #descriptionTitle{
+        text-align: center;
+        color:black;
+        background-color: rgb(167, 161, 161, 0.9);
+    }
+
+    #submitButton{
+        width: 20%;
+        font-size: 1.2rem;
+        min-width: 80px;
+        font-family: monospace;
+        border-radius: 5px;
+    }
+
+    #descriptionP{
+        font-family: monospace;
+        font-size: large;
+        background-color: rgba(245, 245, 242, 0.9);
+        border: 3px solid rgb(167, 161, 161);  
+    }
+
+    #scoreboardTitle{
+        color: black;
+    }
+
+    #scoreBoardDetails{
+        background-color: rgba(245, 245, 242, 0.9);
+        height: 200px;
+        text-align: center;
+    }
+
+    #nameScoreBoard{
+        margin-top: 20px;
+        display: inline-block;
+        font-family: monospace;
+        font-size: x-large;
+    }
+
+    #time{
+        font-family: monospace;
+        font-size: xx-large;
+        text-align: center;
+    }
+
+    .time {
+        max-width: 300px;
+        margin: 0 16%;
+    }
+
+    .display {
+        display: flex;
+        align-items: center;
+        font-size: xxx-large;
+        border: 5px solid rgb(167, 161, 161);
+        padding-left: 30px;
+        color: rgb(82, 80, 80);
+        margin-bottom: 20px;
+    }
+
+    .buttons{
+        text-align: center;
+        font-size: large;
+        font-family: monospace;
+    }
+
+    .buttons .btn1 {
+        background-color: rgb(76, 149, 87);
+    }
+
+    .buttons .btn2 {
+        background-color: rgb(161, 67, 67);
+    }
+
+    #saveButton{
+        margin-top: 7%;
+        color :black
+    }
+
+    #hour::after,
+    #min::after,
+    #sec::after {
+    content: ": ";
+    }
